@@ -1,0 +1,52 @@
+MHGUPie - HunterPie-style overlay for Monster Hunter Generations Ultimate (MHGURecomp)
+=====================================================================================
+
+Shows monster HP, part flinch/break gauges, ailments (poison, paralysis, sleep, stun, exhaust,
+mount, blast: hits until it triggers) and a damage meter with DPS, on top of the game.
+It only READS the game's memory. It doesn't change any game file or your save.
+
+NEEDS
+  - Windows 10 or 11, 64-bit (nothing else to install)
+  - MHGU working in MHGURecomp, game version 1.4.0
+
+INSTALL (1 minute)
+  1. Before unzipping: right-click the zip > Properties > tick "Unblock" > OK.
+     (Files downloaded from Discord or the web are blocked by Windows until you do this.)
+  2. Unzip. You get:
+        MHGUPie\                         <- the overlay
+        Play MHGU with MHGUPie.bat       <- starts the game + overlay together
+        HOW TO INSTALL.txt
+  3. Copy BOTH "MHGUPie" and "Play MHGU with MHGUPie.bat" into your MHGURecomp game folder,
+     the folder that has mhgurecomp.exe in it:
+
+        Windows-MHGURecomp\
+            mhgurecomp.exe
+            data\
+            MHGUPie\                      <- here
+            Play MHGU with MHGUPie.bat    <- here
+
+  4. From now on, start the game with "Play MHGU with MHGUPie.bat".
+     (Or run MHGUPie\MHGUPie.exe yourself, before or after the game.)
+
+  Keep the game in Borderless or Windowed mode (MHGURecomp's default). True fullscreen hides the overlay.
+
+FIRST RUN
+  - "Windows protected your PC": click "More info" > "Run anyway". It's unsigned, not dangerous.
+  - If your antivirus complains: overlays like this (and HunterPie) read another program's memory,
+    which some antivirus programs flag. Allow MHGUPie.exe.
+  - The MHGUPie window should say "Connected" once the game is running. Gauges show up in a hunt.
+
+CONTROLS
+  Scroll Lock   design mode: drag the gauges where you want them, press again to lock
+  F9            hide / show the overlay
+  F10           reset the damage meter
+  The MHGUPie window has a checkbox for every gauge (HP numbers, %, each ailment, flinch, break,
+  damage meter parts, DPS graph...) plus size, width and opacity sliders.
+  Your choices are saved in MHGUPie\settings.ini, so everyone has their own setup.
+
+GOOD TO KNOW
+  - The damage meter counts all damage the monsters take (yours + palico + poison/blast). MHGU
+    doesn't record damage per player, so online it's the whole party's damage.
+  - Parts show as "Part 1..8". You can name them in MHGUPie\config\parts.ini.
+  - Start MHGUPie before the hunt, so the flinch/break bars know their full size.
+  - Something wrong? Send the MHGUPie\MHGUPie-error.log file (if there is one) to whoever shared this with you.

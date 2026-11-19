@@ -1,0 +1,7 @@
+# build output (the release zip goes to GitHub Releases, not the repo)
+bin/
+dist/
+
+# per-user files
+settings.ini
+MHGUPie-error.log
