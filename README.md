@@ -284,5 +284,5 @@ Monster Hunter is a trademark of Capcom. No game files are included.
 
 <p align="center">
   <img src="docs/signature.jpg" alt="Salty" width="200"><br>
-  <sub>Made by <b>Salty</b></sub>
+  
 </p>
